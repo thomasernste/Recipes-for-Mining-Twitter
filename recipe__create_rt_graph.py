@@ -59,11 +59,7 @@ if __name__ == '__main__':
     print >> sys.stderr, "Number nodes:", g.number_of_nodes()
     print >> sys.stderr, "Num edges:", g.number_of_edges()
     print >> sys.stderr, "Num connected components:", 
-<<<<<<< HEAD
 
     len(nx.connected_components(g.to_undirected()))
 
-=======
-                         len(nx.connected_components(g.to_undirected()))
->>>>>>> Revert "Update recipe__create_rt_graph.py"
     print >> sys.stderr, "Node degrees:", sorted(nx.degree(g))
