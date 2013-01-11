@@ -54,10 +54,12 @@ if __name__ == '__main__':
 
     g = create_rt_graph(all_tweets)
 
-    # Print out some stats
+# Print out some stats
 
-    print >> sys.stderr, "Number nodes:", g.number_of_nodes()
-    print >> sys.stderr, "Num edges:", g.number_of_edges()
-    print >> sys.stderr, "Num connected components:", 
-                         len(nx.connected_components(g.to_undirected()))
-    print >> sys.stderr, "Node degrees:", sorted(nx.degree(g))
+print >> sys.stderr, "Number nodes:", g.number_of_nodes()
+print >> sys.stderr, "Num edges:", g.number_of_edges()
+print >> sys.stderr, "Num connected components:", 
+
+len(nx.connected_components(g.to_undirected()))
+
+print >> sys.stderr, "Node degrees:", sorted(nx.degree(g))
